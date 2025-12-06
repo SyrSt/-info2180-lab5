@@ -16,9 +16,7 @@ catch (PDOException $e) {
 $country = $_GET['country'];
 $lookup = $_GET['lookup'] ?? "country";   // default lookup=countries
 
-// ------------------------------
 // Exercise 5: Lookup Cities
-// ------------------------------
 if ($lookup === "cities") {
     $stmt = $conn->prepare("
         SELECT cities.name, cities.district, cities.population
@@ -54,9 +52,7 @@ if ($lookup === "cities") {
 }
 
 
-// ------------------------------
 // DEFAULT: Country Lookup
-// ------------------------------
 $stmt = $conn->prepare("
     SELECT name, continent, independence_year, head_of_state 
     FROM countries 
