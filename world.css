@@ -1,1 +1,139 @@
-/* Add your own styles */
+/* --- Page Layout & Typography --- */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f6f7fb;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background: #0057b7;
+    color: #fff;
+    padding: 20px 30px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+/* --- Main Content Area --- */
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* --- Controls / Input Section --- */
+#controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+#controls label {
+    font-weight: 600;
+}
+
+#country {
+    padding: 10px;
+    width: 280px;
+    border-radius: 5px;
+    border: 1px solid #bbb;
+    transition: 0.3s;
+    font-size: 15px;
+}
+
+#country:focus {
+    outline: none;
+    border-color: #0057b7;
+    box-shadow: 0 0 6px rgba(0,87,183,0.4);
+}
+
+/* Show all checkbox text */
+#all-label {
+    font-size: 14px;
+    color: #444;
+}
+
+/* --- Buttons --- */
+button {
+    padding: 10px 16px;
+    background: #0057b7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+    font-weight: 600;
+}
+
+button:hover {
+    background: #003f87;
+}
+
+button:active {
+    background: #002c60;
+    transform: scale(0.97);
+}
+
+/* --- Result Section --- */
+#result {
+    margin-top: 20px;
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+/* Fade-in animation for results */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* --- Table Styling --- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+table th {
+    background: #0057b7;
+    color: #fff;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: left;
+}
+
+table td {
+    padding: 12px;
+    font-size: 15px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+table tr:nth-child(even) {
+    background: #f3f6ff;
+}
+
+table tr:hover {
+    background: #dce8ff;
+    transition: 0.2s;
+}
+
+/* Message text styling */
+#result p {
+    font-size: 16px;
+    margin-top: 10px;
+}
